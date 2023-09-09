@@ -36,7 +36,7 @@ const getJSON = (url)=>{
 
 const fetchCountryData = function(country){
   let neighbour
-  let url =`https:restcountries.com/v3.1/name/${country}`;
+  let url =`https://restcountries.com/v3.1/name/${country}`;
     getJSON(url).then((data)=>{renderCountry(data[0])
     
       neighbour = data[0].borders[0];
